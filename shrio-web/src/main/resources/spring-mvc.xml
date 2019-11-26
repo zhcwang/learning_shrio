@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd">
+
+    <context:component-scan base-package="com.learning.shrio.controller"></context:component-scan>
+
+    <!-- 自动注册RequestMappingHandlerMapping与RequestMappingHandlerAdapter两个Bean,
+                 这是Spring MVC为@Controller分发请求所必需的，
+                并且提供了数据绑定支持，
+        @NumberFormatannotation支持，
+        @DateTimeFormat支持,
+        @Valid支持读写XML的支持（JAXB）和
+              读写JSON的支持（默认Jackson）等功能。 -->
+    <mvc:annotation-driven />
+
+    <!-- 1、这里对 / 与 /* 作扼要说明：
+         / 是  根目录
+         /* 是拦截所有请求，包括.html等静态文件
+         （以区别于url-pattern中的 /）
+         2、这里既然拦截所有请求，但是却不会影响Controller
+         主要是因为，所有请求先经过dispatcherServlet
+         才会进入到  spring-mvc.xml 文件中-->
+    <mvc:resources location="/" mapping="/*" />
+
+    <!-- 开启AoP -->
+    <aop:config proxy-target-class="true"/>
+
+    <!-- 保证 Shiro内部生命周期 -->
+    <bean class="org.apache.shiro.spring.LifecycleBeanPostProcessor"></bean>
+
+    <!-- 开启Shiro授权生效 -->
+
+    <bean id="" class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor"></bean>
+
+</beans>
