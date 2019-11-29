@@ -37,6 +37,9 @@
 
     <!-- 开启Shiro授权生效 -->
 
-    <bean id="" class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor"></bean>
+    <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+        <property name="securityManager" ref="securityManager"></property>
+    </bean>
+
 
 </beans>

@@ -6,36 +6,41 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 
     <import resource="spring-dao.xml" />
+    <import resource="spring-redis.xml" />
 
-    <context:component-scan base-package="com.learning.shrio.dao" />
+    <context:component-scan base-package="com.learning.shrio.dao, com.learning.shrio.session, com.learning.shrio.cache" />
 
     <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
-        <property name="securityManager" ref="securityManager"></property>
-        <property name="loginUrl" value="login.html"></property>
-        <property name="unauthorizedUrl" value="403.html"></property>
+        <property name="securityManager" ref="securityManager"/>
+        <property name="loginUrl" value="index.html"/>
+        <property name="unauthorizedUrl" value="403.html"/>
         <property name="filterChainDefinitions">
             <value>
                 /index.html = anon
                 /login = anon
+                /rolesor = rolesOr["admin", "admins"]
                 /* = authc
             </value>
         </property>
-       <!-- <property name="filters">
+        <property name="filters">
             <map>
                 <entry key="rolesOr" value-ref="rolesOrFilter" />
             </map>
-        </property>-->
+        </property>
     </bean>
 
     <!-- 自定义filter -->
-    <!--<bean id="rolesOrFilter" class="natapp.liujinliang.filter.RolesOrFilter" />-->
+    <bean id="rolesOrFilter" class="com.learning.shrio.filter.RolesOrFilter" />
 
     <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
-        <property name="realm" ref="myRealm"></property>
+        <property name="realm" ref="myRealm"/>
+        <property name="sessionManager" ref="sessionManager"/>
+        <property name="cacheManager" ref="cacheManager"/>
+        <property name="rememberMeManager" ref="cookieRememberMeManager"/>
     </bean>
 
     <bean id="myRealm" class="com.learning.shrio.security.realm.MyRealm">
-        <property name="credentialsMatcher" ref="credentialsMatcher" ></property>
+        <property name="credentialsMatcher" ref="credentialsMatcher" />
     </bean>
 
     <bean id="credentialsMatcher" class="org.apache.shiro.authc.credential.HashedCredentialsMatcher">
@@ -43,4 +48,20 @@
         <property name="hashIterations" value="1" />
     </bean>
 
+    <bean id="redisSessionDao" class="com.learning.shrio.session.RedisSessionDao"/>
+
+    <bean class="com.learning.shrio.session.CustomSessionManager" id="sessionManager">
+        <property name="sessionDAO" ref="redisSessionDao"/>
+    </bean>
+
+    <bean class="com.learning.shrio.cache.RedisCacheManager" id="cacheManager"/>
+
+    <!-- 网站中记住我xxx天 -->
+    <bean class="org.apache.shiro.web.mgt.CookieRememberMeManager" id="cookieRememberMeManager">
+        <property name="cookie" ref="cookie" />
+    </bean>
+    <bean class="org.apache.shiro.web.servlet.SimpleCookie" id="cookie">
+        <constructor-arg value="rememberMe" />
+        <property name="maxAge" value="200000" />
+    </bean>
 </beans>

@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
-        <property name="url" value="jdbc:mysql://localhost:3306/test?characterEncoding=utf-8"></property>
+        <property name="url" value="jdbc:mysql://localhost:3306/test?useSSL=true"></property>
         <property name="username" value="root" />
         <property name="password" value="root" />
     </bean>

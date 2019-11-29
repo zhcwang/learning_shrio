@@ -4,6 +4,8 @@ public class User {
     private String name;
     private String pwd;
 
+    private boolean rememberMe;
+
     public String getName() {
         return name;
     }
@@ -18,5 +20,13 @@ public class User {
 
     public void setPwd(String pwd) {
         this.pwd = pwd;
+    }
+
+    public boolean isRememberMe() {
+        return rememberMe;
+    }
+
+    public void setRememberMe(boolean rememberMe) {
+        this.rememberMe = rememberMe;
     }
 }

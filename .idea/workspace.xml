@@ -7,7 +7,30 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87fd1216-5a61-46b7-b906-5ab4872219d1" name="Default Changelist" comment="" />
+    <list default="true" id="87fd1216-5a61-46b7-b906-5ab4872219d1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/shrio-web/src/main/java/com/learning/shrio/cache/RedisCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shrio-web/src/main/java/com/learning/shrio/cache/RedisCacheManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shrio-web/src/main/java/com/learning/shrio/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shrio-web/src/main/java/com/learning/shrio/dao/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shrio-web/src/main/java/com/learning/shrio/filter/RolesOrFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shrio-web/src/main/java/com/learning/shrio/session/CustomSessionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shrio-web/src/main/java/com/learning/shrio/session/JedisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shrio-web/src/main/java/com/learning/shrio/session/RedisSessionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shrio-web/src/main/resources/spring-redis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/shrioweb_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/shrioweb_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shrioweb_war_exploded/WEB-INF/classes/com/learning/shrio/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/shrioweb_war_exploded/WEB-INF/classes/com/learning/shrio/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shrioweb_war_exploded/WEB-INF/classes/com/learning/shrio/security/realm/MyRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/shrioweb_war_exploded/WEB-INF/classes/com/learning/shrio/security/realm/MyRealm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shrioweb_war_exploded/WEB-INF/classes/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/shrioweb_war_exploded/WEB-INF/classes/spring-dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shrio-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shrio-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shrio-web/src/main/java/com/learning/shrio/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shrio-web/src/main/java/com/learning/shrio/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shrio-web/src/main/java/com/learning/shrio/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/shrio-web/src/main/java/com/learning/shrio/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shrio-web/src/main/java/com/learning/shrio/security/realm/MyRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/shrio-web/src/main/java/com/learning/shrio/security/realm/MyRealm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shrio-web/src/main/resources/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shrio-web/src/main/resources/spring-dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shrio-web/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shrio-web/src/main/resources/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shrio-web/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shrio-web/src/main/resources/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shrio-web/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/shrio-web/src/main/webapp/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +51,9 @@
     <expand />
     <select />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="shiro" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -37,6 +63,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="LogFilters">
@@ -54,21 +81,27 @@
     </option>
   </component>
   <component name="ProjectId" id="1U2jsvz0hChQICsSKLmgwhct6JY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/shrio-web/src/main/webapp/web.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/shrio-web/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\source_code\shiro\shrio-web\src\main\resources" />
+      <recent name="G:\source_code\shiro\shrio-web\src\main\webapp\WEB-INF" />
+      <recent name="G:\source_code\shiro\shrio-web\src\main\webapp" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.learning.shrio.security.realm" />
       <recent name="com.learning.shiro.test.realm" />
@@ -174,7 +207,7 @@
       </method>
     </configuration>
     <configuration name="tomcat-shrio" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.7" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <deployment>
         <artifact name="shrioweb:war exploded">
           <settings>
@@ -247,12 +280,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Tomcat Server.tomcat-shrio" />
       <item itemvalue="JUnit.IniRealmTest.testIniRealmCheck" />
       <item itemvalue="JUnit.JdbcRealmTest.testJdbcRealmCheck" />
       <item itemvalue="JUnit.UserDefineJdbcRealmTest.testUserDefineJdbcRealmCheck" />
       <item itemvalue="JUnit.UserDefineRealmTest.testUserDefineRealmCheck" />
       <item itemvalue="JUnit.AuthenticationTest.testAuthentication" />
+      <item itemvalue="Tomcat Server.tomcat-shrio" />
     </list>
     <recent_temporary>
       <list>
@@ -276,12 +309,27 @@
       <updated>1574561794053</updated>
       <workItem from="1574561795238" duration="9331000" />
       <workItem from="1574582150686" duration="2868000" />
-      <workItem from="1574769922384" duration="7897000" />
+      <workItem from="1574769922384" duration="8572000" />
+      <workItem from="1574939833380" duration="8406000" />
+      <workItem from="1575025157669" duration="8510000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -302,11 +350,6 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.2/shiro-core-1.4.2.jar!/org/apache/shiro/authz/SimpleAuthorizationInfo.class</url>
-          <line>52</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.2/shiro-core-1.4.2.jar!/org/apache/shiro/realm/jdbc/JdbcRealm.class</url>
           <line>188</line>
           <option name="timeStamp" value="12" />
@@ -316,7 +359,18 @@
           <line>176</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shrio-web/src/main/java/com/learning/shrio/controller/LoginController.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="session" />
+        <watch expression="sessionId" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

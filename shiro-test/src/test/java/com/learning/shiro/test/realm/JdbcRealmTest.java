@@ -5,11 +5,7 @@ import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.mgt.DefaultSecurityManager;
 import org.apache.shiro.realm.jdbc.JdbcRealm;
-import org.apache.shiro.realm.text.IniRealm;
 import org.apache.shiro.subject.Subject;
-import org.junit.Test;
-
-import javax.sql.DataSource;
 
 public class JdbcRealmTest {
     private static DruidDataSource datasource = new DruidDataSource();
