@@ -13,7 +13,7 @@
         <module>shrio-web</module>
     </modules>
     <properties>
-        <shiro.verion>1.4.2</shiro.verion>
+        <shiro.verion>1.6.0</shiro.verion>
         <mysql.connector.verion>5.1.48</mysql.connector.verion>
         <druid.verion>1.1.21</druid.verion>
     </properties>
